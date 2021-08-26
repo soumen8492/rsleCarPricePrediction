@@ -30,7 +30,6 @@ from sklearn.svm import SVR
 c=SVR(kernel = "linear",gamma="auto")
 c.fit(x_train,y_train)
 y_p=c.predict(x_test)
-print("souvik")
 from sklearn import metrics
 from sklearn.metrics import r2_score
 print(r2_score(y_test,y_p))
